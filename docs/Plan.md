@@ -21,8 +21,9 @@ Back to [[Madibeng Opportunities Board]]. The full plan with every step is in th
 - [x] Phase 0: repo structure, Pages workflow, placeholder site, notes
 - [x] Phase 0: GitHub Pages on; site live at https://simseco453-dot.github.io/Madibeng-Opportunities-Board/
 - [x] Phase 1: sources audited and sorted; 5 picked for v1 (see [[Sources]])
-- [ ] Phase 2: listing format and sample saved
-- [ ] Phase 3: collectors running twice daily for 3 days without errors
+- [x] Phase 2: listing format and sample saved (see [[Data format]])
+- [x] Phase 3: collectors written and tested live (see [[Collectors]])
+- [ ] Phase 3: collectors running twice daily for 3 days without errors (check 17 Nov)
 - [ ] Phase 4: site live and tested on a phone
 - [ ] Phase 5: submission form and moderation working
 - [ ] Phase 6: soft launch done, feedback fixed, public launch

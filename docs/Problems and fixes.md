@@ -5,6 +5,28 @@ tags: [project, madibeng, problems]
 
 Back to [[Madibeng Opportunities Board]]. Newest first.
 
+## 2026-11-14: Can't test collectors from the workspace
+
+- **Problem:** the Claude workspace can't reach the source sites, so the collectors couldn't be run there.
+- **Fix:** offline tests with sample data run anywhere; the real test is a dry run on GitHub Actions, triggered by opening a pull request.
+
+## 2026-11-14: DPSA posts not found in the test text
+
+- **Problem:** circular lines look like `POST 40/101 : SOCIAL WORKER`, with the post number before the colon, so the field pattern matched nothing.
+- **Fix:** allow an optional `40/101` number in the pattern.
+
+## 2026-11-14: Department-wide closing dates lost
+
+- **Problem:** many departments state one closing date above all their posts; it wasn't being applied to the posts under it.
+- **Fix:** remember the department's closing date and use it for every post that has none of its own. Reset it when a new department or province starts.
+
+## 2026-11-14: First live dry run: three tidy-ups
+
+- **Circular label** read `6 November 2026" />` because the pattern ran into the page's HTML. Fixed by matching only a date.
+- **DPSA titles** included the whole branch and division ("Administration Clerk (Production) Branch: Limpopo-Olifants…"). Now cut at "Branch:", "Division:" and similar.
+- **Locations** showed long text with reference numbers ("Polokwane Ref No: LOCMA 42 Hartbeespoort…"). Now shows the local place found ("Hartbeespoort").
+- **MQA closing dates** were missed because the adverts say "closes on 19 November 2026". The pattern now also matches "close on", "closes on" and "deadline". Checked against the real advert text in the built-in browser.
+
 ## 2026-11-14: Source sites unreachable from the workspace
 
 - **Problem:** the Claude workspace's network only allows package registries and GitHub, so it couldn't open madibeng.gov.za, mqa.org.za and the others.
