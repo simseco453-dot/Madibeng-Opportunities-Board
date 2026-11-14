@@ -45,6 +45,14 @@ def is_local(*texts: str | None) -> bool:
     return any(re.search(rf"\b{re.escape(p)}\b", blob) for p in LOCAL_PLACES)
 
 
+def local_place(*texts: str | None) -> str | None:
+    """The first local place named in the text, nicely capitalised."""
+    blob = " ".join(t for t in texts if t).lower()
+    hits = [(m.start(), p) for p in LOCAL_PLACES
+            for m in [re.search(rf"\b{re.escape(p)}\b", blob)] if m]
+    return min(hits)[1].title() if hits else None
+
+
 def slug(text: str, limit: int = 60) -> str:
     s = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
     return s[:limit].rstrip("-")
@@ -81,8 +89,8 @@ def parse_date(text: str | None) -> str | None:
 
 
 _CLOSING_RE = re.compile(
-    r"closing\s*date\s*(?:for\s+applications?\s*)?(?:is|:|-)?\s*(?:on\s+)?"
-    r"(?:\w+day,?\s+)?([^\n.;]{0,40})",
+    r"(?:closing\s*date|clos(?:e|es|ing)\s+on|deadline)\s*(?:for\s+applications?\s*)?"
+    r"(?:is|:|-)?\s*(?:on\s+)?(?:\w+day,?\s+)?([^\n.;]{0,40})",
     re.I,
 )
 

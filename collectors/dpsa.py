@@ -10,7 +10,8 @@ import re
 
 import pdfplumber
 
-from common import clean, fetch, guess_qualification, guess_type, is_local, listing, parse_date
+from common import (clean, fetch, guess_qualification, guess_type, is_local, listing,
+                    local_place, parse_date)
 
 NAME = "DPSA circular"
 WEEK_PAGE = "https://www.gov.za/government-jobs-week"
@@ -36,9 +37,9 @@ def circular_pdfs() -> tuple[str, list[str]]:
         if "national government jobs" in t or "provincial government jobs" in t:
             wanted.append(href if href.startswith("http") else BASE + href)
     label = ""
-    m = re.search(r"Vacancy Circular No\.?\s*(\d+)\s*of\s*([^<]+?)<", page)
+    m = re.search(r"Vacancy Circular No\.?\s*(\d+)\s*of\s*(\d{1,2}\s+[A-Za-z]+\s+20\d{2})", page)
     if m:
-        label = f"Circular {m.group(1)} ({clean(m.group(2))})"
+        label = f"circular {m.group(1)} of {m.group(2)}"
     if not wanted:  # fall back to the complete circular
         for href, text in links:
             if "vacancy circular" in text.lower():
@@ -105,6 +106,8 @@ def _title_and_ref(post_field: str) -> tuple[str, str]:
     ref = clean(m.group(1)) if m else ""
     title = clean(s[: m.start()] if m else s)
     title = re.sub(r"\(X\s*\d+\s*POSTS?\)", "", title, flags=re.I).strip(" -:")
+    title = re.split(r"\s+(?:BRANCH|DIVISION|DIRECTORATE|CHIEF DIRECTORATE|COMPONENT|UNIT)\s*:", title,
+                     flags=re.I)[0].strip(" -:")
     return title.title(), ref
 
 
@@ -130,7 +133,9 @@ def collect() -> list[dict]:
             if not wanted(p):
                 continue
             title, ref = _title_and_ref(p["POST"])
-            centre = clean(p.get("CENTRE", "")) or p.get("province", "")
+            raw_centre = clean(p.get("CENTRE", ""))
+            centre = local_place(raw_centre) or re.split(r"\s+Ref\b", raw_centre)[0][:50] \
+                or p.get("province", "")
             org = p.get("dept") or f"{p.get('province', '')} government".strip()
             reqs = p.get("REQUIREMENTS", "")
             out.append(listing(
