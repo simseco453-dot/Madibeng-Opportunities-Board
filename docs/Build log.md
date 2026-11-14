@@ -5,6 +5,12 @@ tags: [project, madibeng, log]
 
 Back to [[Madibeng Opportunities Board]]. Newest first.
 
+## 2026-11-14: First real refresh
+
+- Merged PR #4 and started the refresh by hand (Actions → Refresh listings). It collected, committed the data and redeployed the site in about 1.5 minutes.
+- Checked the live site's `data/status.json` in the built-in browser: 12 listings published (DPSA 8, MQA 2, Valterra 3, Bosch 0), no errors, no Madibeng PDFs waiting.
+- From now on it runs by itself at 05:00 and 17:00.
+
 ## 2026-11-14: Phase 3 collectors
 
 - Wrote `collectors/common.py`, `dpsa.py`, `mqa.py`, `smartrecruiters.py`, `madibeng.py` and `run_all.py`, plus 7 offline tests with sample data. Details in [[Collectors]].
