@@ -5,6 +5,14 @@ tags: [project, madibeng, log]
 
 Back to [[Madibeng Opportunities Board]]. Newest first.
 
+## 2026-11-14: Site live (Phase 0 done)
+
+- Claude merged PR #1 (Phase 0 setup) through the GitHub API.
+- The first deploy failed: Pages was not switched on yet. Claude couldn't change that setting remotely (GitHub's Pages settings API is blocked from the session, and the desktop browser wasn't signed in to GitHub).
+- Jared set Settings → Pages → Source to "GitHub Actions" on his phone. He did not press "Configure" on the suggested workflow, because the repo already has its own (`.github/workflows/pages.yml`).
+- Claude re-ran the deploy; it succeeded. Checked the live page in the built-in browser: heading, Coming soon card and scam warning all show.
+- Live: https://simseco453-dot.github.io/Madibeng-Opportunities-Board/
+
 ## 2026-11-12: Phase 0 setup
 
 - Jared created the GitHub repo `simseco453-dot/Madibeng-Opportunities-Board` (GitHub turned the spaces in the name into dashes).
