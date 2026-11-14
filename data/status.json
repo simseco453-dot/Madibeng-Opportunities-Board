@@ -1,42 +1,44 @@
 {
-  "last_run": "2026-11-14T11:13:16+00:00",
+  "last_run": "2026-11-14T15:27:19+00:00",
   "sources": {
     "dpsa": {
       "name": "DPSA circular",
       "ok": true,
       "count": 8,
       "zero_runs": 0,
-      "last_success": "2026-11-14T11:13:16+00:00"
+      "last_success": "2026-11-14T15:27:19+00:00"
     },
     "mqa": {
       "name": "MQA",
       "ok": true,
       "count": 2,
       "zero_runs": 0,
-      "last_success": "2026-11-14T11:13:16+00:00"
+      "last_success": "2026-11-14T15:27:19+00:00"
     },
     "valterra": {
       "name": "Valterra Platinum",
       "ok": true,
       "count": 3,
       "zero_runs": 0,
-      "last_success": "2026-11-14T11:13:16+00:00"
+      "last_success": "2026-11-14T15:27:19+00:00"
     },
     "bosch": {
       "name": "Bosch",
       "ok": true,
       "count": 0,
-      "zero_runs": 1,
-      "last_success": "2026-11-14T11:13:16+00:00"
+      "zero_runs": 2,
+      "last_success": "2026-11-14T15:27:19+00:00"
     },
     "madibeng": {
       "name": "Madibeng Municipality",
-      "ok": true,
-      "new_pdfs": 0,
+      "ok": false,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.madibeng.gov.za', port=443): Max retries exceeded with url: /wp-json/wp/v2/media?search=vacanc&per_page=20&_fields=id,date,title,source_url (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.madibeng.gov.za', port=443) at 0x7d5d7983a270>, 'Connection to www.madibeng.gov.za timed out. (connect timeout=45)'))",
       "waiting_for_review": 0
     }
   },
-  "errors": [],
+  "errors": [
+    "Madibeng Municipality: ConnectTimeout: HTTPSConnectionPool(host='www.madibeng.gov.za', port=443): Max retries exceeded with url: /wp-json/wp/v2/media?search=vacanc&per_page=20&_fields=id,date,title,source_url (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.madibeng.gov.za', port=443) at 0x7d5d7983a270>, 'Connection to www.madibeng.gov.za timed out. (connect timeout=45)'))"
+  ],
   "warnings": [],
   "live_listings": 12
 }
