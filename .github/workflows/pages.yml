@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths: ["site/**", "data/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
+  workflow_call:   # the refresh workflow calls this after committing new data
 
 permissions:
   contents: read
@@ -23,6 +24,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}   # latest commit on the branch, including fresh data
       - name: Bundle site with latest data
         run: |
           mkdir -p _public
