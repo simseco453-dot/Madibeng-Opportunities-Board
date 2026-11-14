@@ -1,0 +1,14 @@
+{
+  "id": "sample-2026-0001",
+  "title": "Process Plant Learnership (example only)",
+  "organisation": "Example Mining Company",
+  "type": "learnership",
+  "min_qualification": "Grade 12",
+  "sector": "Mining",
+  "location": "Brits",
+  "closing_date": "2026-12-05",
+  "apply_link": "https://example.com/advert",
+  "source": "Example employer careers page",
+  "verified": true,
+  "date_added": "2026-11-12"
+}
