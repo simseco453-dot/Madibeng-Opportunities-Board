@@ -5,6 +5,21 @@ tags: [project, madibeng, problems]
 
 Back to [[Madibeng Opportunities Board]]. Newest first.
 
+## 2026-11-14: Source sites unreachable from the workspace
+
+- **Problem:** the Claude workspace's network only allows package registries and GitHub, so it couldn't open madibeng.gov.za, mqa.org.za and the others.
+- **Fix:** used the built-in browser in the Claude desktop app on Jared's computer, approving each site once. This doesn't affect the real collectors: they run on GitHub Actions, which can reach these sites.
+
+## 2026-11-14: dpsa.gov.za wouldn't load
+
+- **Problem:** the DPSA's own circular page failed to load in the browser.
+- **Fix:** gov.za hosts the same circulars at `gov.za/government-jobs-week`, which links the newest circular's PDFs each week. Use that instead.
+
+## 2026-11-14: nwpg.gov.za returns 404
+
+- **Problem:** the North West Provincial Government site returned "Not Found" for every page tested.
+- **Fix:** skip it. Provincial posts are also published in the DPSA circular's North West annexure.
+
 ## 2026-11-14: First Pages deploy failed
 
 - **Problem:** the deploy workflow failed at `actions/configure-pages` because Pages wasn't enabled for the repo.
