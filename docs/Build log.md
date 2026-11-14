@@ -5,6 +5,14 @@ tags: [project, madibeng, log]
 
 Back to [[Madibeng Opportunities Board]]. Newest first.
 
+## 2026-11-14: Phase 1 source audit
+
+- Found the official page for each candidate source with web searches.
+- Opened each site in the built-in browser on Jared's computer (the Claude workspace can't reach these sites directly) and checked robots.txt, page structure and any data feeds.
+- Found three sources with machine-readable data: MQA's WordPress job-listing API, the SmartRecruiters public posting API (Valterra Platinum, Bosch), and the gov.za "Government jobs this week" page, which always links the latest DPSA circular PDFs.
+- Madibeng Municipality publishes vacancies as PDFs; its WordPress media API shows each new PDF with an upload date.
+- Results and the v1 picks are in [[Sources]].
+
 ## 2026-11-14: Site live (Phase 0 done)
 
 - Claude merged PR #1 (Phase 0 setup) through the GitHub API.
