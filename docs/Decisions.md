@@ -7,6 +7,11 @@ Back to [[Madibeng Opportunities Board]]. Newest first.
 
 | Date | Decision | Why |
 | --- | --- | --- |
+| 2026-11-14 | Refresh at 05:00 and 17:00 SAST | Catches the Friday circular the same day; two runs a day is polite to the sources |
+| 2026-11-14 | A failing source keeps its last good listings | One broken website shouldn't empty the board |
+| 2026-11-14 | Madibeng PDFs go to a review queue, not straight onto the board | Their layout varies; a person reads them |
+| 2026-11-14 | DPSA: local centres plus North West entry-level posts (level 1 to 7) | Keeps the board relevant to people in Madibeng without missing nearby provincial jobs |
+| 2026-11-14 | Test collectors with pull-request dry runs on GitHub Actions | The only place that can reach the source sites before going live |
 | 2026-11-14 | v1 sources: DPSA circular, MQA, Valterra, Bosch (automatic) + Madibeng Municipality (semi-automatic) | Best mix of local relevance and data a script can read reliably |
 | 2026-11-14 | Use gov.za's weekly page for the DPSA circular, not dpsa.gov.za | dpsa.gov.za didn't load; gov.za links the same PDFs |
 | 2026-11-14 | Don't collect from SA Youth or ESSA; link to them on the help page | Both need a login |

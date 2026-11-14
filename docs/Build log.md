@@ -5,6 +5,13 @@ tags: [project, madibeng, log]
 
 Back to [[Madibeng Opportunities Board]]. Newest first.
 
+## 2026-11-14: Phase 3 collectors
+
+- Wrote `collectors/common.py`, `dpsa.py`, `mqa.py`, `smartrecruiters.py`, `madibeng.py` and `run_all.py`, plus 7 offline tests with sample data. Details in [[Collectors]].
+- Added `.github/workflows/refresh.yml` (twice daily, commits data, redeploys) and made `pages.yml` callable from it.
+- Added empty `data/manual.json`, `data/review_queue.json` and `data/reviewed_pdfs.json`.
+- Tested live through a pull request dry run on GitHub Actions, which can reach the source sites: 12 listings found. Fixed three things the first run showed (see [[Problems and fixes]]) and ran it again.
+
 ## 2026-11-14: Phase 1 source audit
 
 - Found the official page for each candidate source with web searches.
