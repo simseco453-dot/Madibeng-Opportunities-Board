@@ -133,5 +133,50 @@
     "verified": true,
     "date_added": "2026-11-14",
     "archived_on": "2026-11-18"
+  },
+  {
+    "id": "mqa-11772",
+    "title": "2027 Bursary Applications for Persons Employed Within the Mining and Minerals Sector Now Open",
+    "organisation": "Mining Qualifications Authority (MQA)",
+    "type": "bursary",
+    "min_qualification": "See advert",
+    "sector": "Mining",
+    "location": "National",
+    "closing_date": "2026-11-19",
+    "apply_link": "https://mqa.org.za/job/2027-bursary-applications-for-persons-employed-within-the-mining-and-minerals-sector-now-open/",
+    "source": "MQA website",
+    "verified": true,
+    "date_added": "2026-11-14",
+    "archived_on": "2026-11-20"
+  },
+  {
+    "id": "mqa-11773",
+    "title": "Applications for Direct Bursary Funding Applications By Universities and TVET Colleges for Unemployed Bursars for the 2027 Academic Year Now Open",
+    "organisation": "Mining Qualifications Authority (MQA)",
+    "type": "bursary",
+    "min_qualification": "See advert",
+    "sector": "Mining",
+    "location": "National",
+    "closing_date": "2026-11-19",
+    "apply_link": "https://mqa.org.za/job/applications-for-direct-bursary-funding-applications-by-universities-and-tvet-colleges-for-unemployed-bursars-for-the-2027-academic-year-now-open/",
+    "source": "MQA website",
+    "verified": true,
+    "date_added": "2026-11-14",
+    "archived_on": "2026-11-20"
+  },
+  {
+    "id": "valterra-744000161024489",
+    "title": "Professional Nurse Occupational Health",
+    "organisation": "Valterra Platinum",
+    "type": "job",
+    "min_qualification": "See advert",
+    "sector": "Mining",
+    "location": "Rustenburg",
+    "closing_date": null,
+    "apply_link": "https://jobs.smartrecruiters.com/ValterraPlatinum1/744000161024489",
+    "source": "Valterra Platinum careers (SmartRecruiters)",
+    "verified": true,
+    "date_added": "2026-11-14",
+    "archived_on": "2026-11-20"
   }
 ]
