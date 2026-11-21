@@ -1,33 +1,33 @@
 {
-  "last_run": "2026-11-20T15:45:01+00:00",
+  "last_run": "2026-11-21T03:40:18+00:00",
   "sources": {
     "dpsa": {
       "name": "DPSA circular",
       "ok": true,
-      "count": 7,
+      "count": 6,
       "zero_runs": 0,
-      "last_success": "2026-11-20T15:45:01+00:00"
+      "last_success": "2026-11-21T03:40:18+00:00"
     },
     "mqa": {
       "name": "MQA",
       "ok": true,
       "count": 0,
-      "zero_runs": 2,
-      "last_success": "2026-11-20T15:45:01+00:00"
+      "zero_runs": 3,
+      "last_success": "2026-11-21T03:40:18+00:00"
     },
     "valterra": {
       "name": "Valterra Platinum",
       "ok": true,
       "count": 2,
       "zero_runs": 0,
-      "last_success": "2026-11-20T15:45:01+00:00"
+      "last_success": "2026-11-21T03:40:18+00:00"
     },
     "bosch": {
       "name": "Bosch",
       "ok": true,
       "count": 0,
-      "zero_runs": 14,
-      "last_success": "2026-11-20T15:45:01+00:00"
+      "zero_runs": 15,
+      "last_success": "2026-11-21T03:40:18+00:00"
     },
     "madibeng": {
       "name": "Madibeng Municipality",
@@ -38,5 +38,5 @@
   },
   "errors": [],
   "warnings": [],
-  "live_listings": 9
+  "live_listings": 8
 }
