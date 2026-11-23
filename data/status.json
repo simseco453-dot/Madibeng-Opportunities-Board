@@ -1,34 +1,33 @@
 {
-  "last_run": "2026-11-22T15:34:00+00:00",
+  "last_run": "2026-11-23T03:48:47+00:00",
   "sources": {
     "dpsa": {
       "name": "DPSA circular",
-      "ok": false,
+      "ok": true,
       "count": 6,
       "zero_runs": 0,
-      "last_success": "2026-11-22T03:41:45+00:00",
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.gov.za', port=443): Max retries exceeded with url: /government-jobs-week (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.gov.za', port=443) at 0x7915acccc050>, 'Connection to www.gov.za timed out. (connect timeout=45)'))"
+      "last_success": "2026-11-23T03:48:47+00:00"
     },
     "mqa": {
       "name": "MQA",
       "ok": true,
       "count": 0,
-      "zero_runs": 6,
-      "last_success": "2026-11-22T15:34:00+00:00"
+      "zero_runs": 7,
+      "last_success": "2026-11-23T03:48:47+00:00"
     },
     "valterra": {
       "name": "Valterra Platinum",
       "ok": true,
       "count": 2,
       "zero_runs": 0,
-      "last_success": "2026-11-22T15:34:00+00:00"
+      "last_success": "2026-11-23T03:48:47+00:00"
     },
     "bosch": {
       "name": "Bosch",
       "ok": true,
       "count": 0,
-      "zero_runs": 18,
-      "last_success": "2026-11-22T15:34:00+00:00"
+      "zero_runs": 19,
+      "last_success": "2026-11-23T03:48:47+00:00"
     },
     "madibeng": {
       "name": "Madibeng Municipality",
@@ -37,11 +36,9 @@
       "waiting_for_review": 0
     }
   },
-  "errors": [
-    "DPSA circular: ConnectTimeout: HTTPSConnectionPool(host='www.gov.za', port=443): Max retries exceeded with url: /government-jobs-week (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.gov.za', port=443) at 0x7915acccc050>, 'Connection to www.gov.za timed out. (connect timeout=45)'))"
-  ],
+  "errors": [],
   "warnings": [
-    "MQA has returned nothing 6 runs in a row; its page may have changed."
+    "MQA has returned nothing 7 runs in a row; its page may have changed."
   ],
   "live_listings": 8
 }
