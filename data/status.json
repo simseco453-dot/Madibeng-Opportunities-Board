@@ -1,44 +1,46 @@
 {
-  "last_run": "2026-11-27T23:05:03+00:00",
+  "last_run": "2026-11-28T11:08:39+00:00",
   "sources": {
     "dpsa": {
       "name": "DPSA circular",
       "ok": true,
       "count": 1,
       "zero_runs": 0,
-      "last_success": "2026-11-27T23:05:03+00:00"
+      "last_success": "2026-11-28T11:08:39+00:00"
     },
     "mqa": {
       "name": "MQA",
-      "ok": true,
+      "ok": false,
       "count": 0,
       "zero_runs": 16,
-      "last_success": "2026-11-27T23:05:03+00:00"
+      "last_success": "2026-11-27T23:05:03+00:00",
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
     },
     "valterra": {
       "name": "Valterra Platinum",
       "ok": true,
       "count": 2,
       "zero_runs": 0,
-      "last_success": "2026-11-27T23:05:03+00:00"
+      "last_success": "2026-11-28T11:08:39+00:00"
     },
     "bosch": {
       "name": "Bosch",
       "ok": true,
       "count": 0,
-      "zero_runs": 28,
-      "last_success": "2026-11-27T23:05:03+00:00"
+      "zero_runs": 29,
+      "last_success": "2026-11-28T11:08:39+00:00"
     },
     "madibeng": {
       "name": "Madibeng Municipality",
-      "ok": true,
-      "new_pdfs": 0,
+      "ok": false,
+      "error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
       "waiting_for_review": 0
     }
   },
-  "errors": [],
-  "warnings": [
-    "MQA has returned nothing 16 runs in a row; its page may have changed."
+  "errors": [
+    "MQA: JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+    "Madibeng Municipality: JSONDecodeError: Expecting value: line 1 column 1 (char 0)"
   ],
+  "warnings": [],
   "live_listings": 3
 }
